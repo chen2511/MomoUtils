@@ -10,6 +10,15 @@ class Logger:
         Args:
             logs_root_path: 日志存放的根目录，一般在项目目录的根位置
             module_name:    日志的输出模块，比如在处理音频的模块中输出的信息，应该带有此信息，分开目录存放
+
+        Usage:
+            >>> logger = Logger()
+
+                logger.info('sdsadsadsds')
+                logger.info('thyjyj fgfdgfdg')
+                logger.error('thyjyj fgfdgfdg')
+                logger.warn('thyjyj fgfdgfdg')
+                logger.exception('thyjyj fgfdgfdg')
         '''
         super().__init__()
         self.logs_root_path = logs_root_path

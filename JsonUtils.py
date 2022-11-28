@@ -7,6 +7,16 @@ import os
 """
 
 class JsonUtils:
+    '''
+    Usage:
+        >>> test = JsonUtils(init_dict={'1': 333})
+            test.close()
+
+            data = JsonUtils.load_json_4dict('output.json')
+            data['2'] = 21321321
+
+            JsonUtils.save_json_4dict(data, './output.json')
+    '''
     def __init__(self, filename:str = 'output.json', save_root_path = './', init_dict:dict = {}) -> None:
         '''
             这一段代码其实没有什么意义，基本上只要使用静态函数即可
